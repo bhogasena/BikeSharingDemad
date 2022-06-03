@@ -1,48 +1,54 @@
-# Project Name
-> Outline a brief description of your project.
+# Linear Regression Model for Bike Sharing Rided Demand Prediction and Inferences
 
+A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
 
+Compnay wants to understand the factors on which the demand for these shared bikes depends. Specifically, they want to understand the factors affecting the demand for these shared bikes in the American market.
+
+The company wants to know:
+
+*   Which variables are significant in predicting the demand for shared bikes.
+*   How well those variables describe the bike demands
+     
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+Required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+Bike Sharing dataset [here](https://github.com/bhogasena/BikeSharingDemad/day.csv) and Data dictionary [here](https://github.com/bhogasena/BikeSharingDemad/Data_Dictionary.txt).
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- Below are the top5 Significant variables which drivers the demand for Bike Share Rides.
+      Feature         Co-efficient
+        temp             0.5582
+        hum             -0.2911
+         yr              0.2268
+      windspeed         -0.2047
+      weathersit3       -0.1964
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- A unit increase in temp variable casues the bike share rides count increase by 0.5582 units
+- A unit increase in hum variable casues the bike share rides count decrease by 0.2911 units
+- A unit increase in yr variable casues the bike share rides count increase by 0.2268 units
+- A unit increase in windspeed variable casues the bike share rides count decrease by 0.2047 units
+- A unit increase in weathersit3(Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds variable casues the bike share rides count - decrease by 0.1964 units
 
+- Out final Model with RFE (Recursive Feature Elimination) has R2-Score: 0.843, F-Static: 228.0, Prob (F-statistic):          2.03e-186
+- R2- Score and test data is 0.810 which is good.
+- Error terms are almost normally distrbuted with mean 0- this is one of the assumption for linear regression model
+- There is no multicollinearity in our model as VIFs are less.
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- numpy - version 1.21.6
+- matplotlib - version 3.2.2
+- seaborn - version 0.11.2
+- plotly - version 5.5.0
+- statsmodels - version 0.10.2
+- sklearn - version 1.0.2
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@bhogasena] - feel free to contact me!
 
 
 <!-- Optional -->
