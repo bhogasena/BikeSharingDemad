@@ -17,7 +17,7 @@ The company wants to know:
 ## General Information
 Required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
 
-Bike Sharing dataset [here](https://github.com/bhogasena/BikeSharingDemad/day.csv) and Data dictionary [here](https://github.com/bhogasena/BikeSharingDemad/Data_Dictionary.txt).
+Bike Sharing dataset [here](https://github.com/bhogasena/BikeSharingDemad/blob/main/day.csv) and Data dictionary [here](https://github.com/bhogasena/BikeSharingDemad/blob/main/Data_Dictionary.txt).
 
 ## Conclusions
 - Below are the top5 Significant variables which drivers the demand for Bike Share Rides.
