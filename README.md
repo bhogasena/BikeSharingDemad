@@ -20,24 +20,19 @@ Required to model the demand for shared bikes with the available independent var
 Bike Sharing dataset [here](https://github.com/bhogasena/BikeSharingDemad/blob/main/day.csv) and Data dictionary [here](https://github.com/bhogasena/BikeSharingDemad/blob/main/Data_Dictionary.txt).
 
 ## Conclusions
-- Below are the top5 Significant variables which drivers the demand for Bike Share Rides.
+- Below are the top3 Significant variables which drivers the demand for Bike Share Rides.
       Feature         Co-efficient
-        temp             0.5582
-        hum             -0.2911
-         yr              0.2268
-      windspeed         -0.2047
-      weathersit3       -0.1964
+       temp             0.5499
+    weathersit_3       -0.2880
+        yr              0.2331
 
-- A unit increase in temp variable casues the bike share rides count increase by 0.5582 units
-- A unit increase in hum variable casues the bike share rides count decrease by 0.2911 units
-- A unit increase in yr variable casues the bike share rides count increase by 0.2268 units
-- A unit increase in windspeed variable casues the bike share rides count decrease by 0.2047 units
-- A unit increase in weathersit3(Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds variable casues the bike share rides count - decrease by 0.1964 units
+- A unit increase in temp variable casues the bike share rides count increase by 0.5499 units
+- A unit increase in yr variable casues the bike share rides count increase by 0.2331 units
+- A unit increase in weathersit3(Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds variable casues the bike share rides count decrease by 0.2880 units
 
-- Out final Model with RFE (Recursive Feature Elimination) has R2-Score: 0.843, F-Static: 228.0, Prob (F-statistic):          2.03e-186
-- R2- Score and test data is 0.810 which is good.
+- Our model has R2-Score of 0.836 with train data and with test data predictions we got 0.796 which is good.
 - Error terms are almost normally distrbuted with mean 0- this is one of the assumption for linear regression model
-- There is no multicollinearity in our model as VIFs are less.
+- There is no multicollinearity in our model as VIFs are less than 5
 
 ## Technologies Used
 - numpy - version 1.21.6
