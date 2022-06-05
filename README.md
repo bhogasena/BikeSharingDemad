@@ -20,19 +20,19 @@ Required to model the demand for shared bikes with the available independent var
 Bike Sharing dataset [here](https://github.com/bhogasena/BikeSharingDemad/blob/main/day.csv) and Data dictionary [here](https://github.com/bhogasena/BikeSharingDemad/blob/main/Data_Dictionary.txt).
 
 ## Conclusions
-- Below are the top3 Significant variables which drivers the demand for Bike Share Rides.
-      Feature         Co-efficient
-       temp             0.5499
-    weathersit_3       -0.2880
-        yr              0.2331
-
-- A unit increase in temp variable casues the bike share rides count increase by 0.5499 units
-- A unit increase in yr variable casues the bike share rides count increase by 0.2331 units
-- A unit increase in weathersit3(Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds variable casues the bike share rides count decrease by 0.2880 units
-
-- Our model has R2-Score of 0.836 with train data and with test data predictions we got 0.796 which is good.
+- As per our manual feature elimination model, below are the top3 significant variables with their coefficients to predict the bike share rides count.
+               atemp : 0.5309
+               weathersit_3 : -0.2876
+               yr : 0.2339
+- Our model has R2-Score of 0.835 with train data and with test data predictions we got 0.804 which is good.
 - Error terms are almost normally distrbuted with mean 0- this is one of the assumption for linear regression model
-- There is no multicollinearity in our model as VIFs are less than 5.-
+- There is no multicollinearity in our model as VIFs are less than 10.
+Intepretations
+- A unit increase in temp variable casues the bike share rides count increase by 0.5309 units
+- A unit increase in yr variable casues the bike share rides count increase by 0.2339 units
+- A unit increase in weathersit3(Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds variable casues the bike share rides count decrease by 0.2876 units
+- Equation for Bike share cnt can be expressed as below.
+               cnt = 0.0828+(0.5309atemp)-(0.1365windspeed)+(0.0993season_2)+(0.1200season_4)+(0.0682mnth_8)+(mnth_90.1218)+(mnth_100.0387)-(weathersit_20.0860)-(weathersit_30.2876)+(weekday_60.0656)+(yr0.2339)+(workingday0.0553)
                           
 
 ## Technologies Used
